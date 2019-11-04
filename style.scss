@@ -1,0 +1,59 @@
+///// @include  call @mixin func
+@mixin bg($bgcolor){
+
+  background: $bgcolor;
+}
+
+////宣告變數
+$translucent-white: rgba(255,255,255,0.3);
+p {
+    truebackground-color: $translucent-white;
+ }
+////Nesting：降低父元素重複性
+.parent {
+    color: blue;
+    .child {
+      font-size: 12px;
+    }
+  }
+////& 連結字串
+a {
+    color:#185683; 
+    text-decoration:none;
+    &:hover{
+        text-decoration: underline;
+    }
+    &.disable{
+        pointer-events:none; 
+        font-size: 0px;
+    }
+    &.btn{
+         display:inline-block;
+         color:#000; 
+         height:auto; 
+         padding:0 20px;
+         background-color: #e2e2e2\0;
+    }
+    &.button{
+      @include bg(#000);
+      background: linear-gradient(#ffffff,#e2e2e2);
+      height: 21px;
+      display: inline-block;
+      padding: 0 10px;
+      color: #000;
+      line-height: 21px;
+      border: 1px solid #999;
+    }
+}
+
+////@extend 共用
+.text{
+    font-size: inherit;
+    font-weight: normal;
+}
+.text2{
+  @extend .text
+}
+
+
+

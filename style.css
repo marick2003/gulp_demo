@@ -1,0 +1,51 @@
+p {
+  truebackground-color: rgba(255, 255, 255, 0.3);
+}
+
+.parent {
+  color: blue;
+}
+
+.parent .child {
+  font-size: 12px;
+}
+
+a {
+  color: #185683;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.disable {
+  pointer-events: none;
+  font-size: 0px;
+}
+
+a.btn {
+  display: inline-block;
+  color: #000;
+  height: auto;
+  padding: 0 20px;
+  background-color: #e2e2e2\0;
+}
+
+a.button {
+  background: #000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e2e2e2));
+  background: linear-gradient(#ffffff, #e2e2e2);
+  height: 21px;
+  display: inline-block;
+  padding: 0 10px;
+  color: #000;
+  line-height: 21px;
+  border: 1px solid #999;
+}
+
+.text, .text2 {
+  font-size: inherit;
+  font-weight: normal;
+}
+/*# sourceMappingURL=style.css.map */
