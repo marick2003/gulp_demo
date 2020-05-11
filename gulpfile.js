@@ -11,7 +11,7 @@ gulp.task('sass', function () {     // 定義 sass 的任務名稱
       .pipe(sass(                     // 編譯 sass
         {outputStyle: 'expanded'}     // sass 的輸出格式
       ).on('error', sass.logError))
-      .pipe(gulp.dest('./public/stylesheets')) // sass 編譯完成後的匯出資料夾
+      .pipe(gulp.dest('./public/source/css')) // sass 編譯完成後的匯出資料夾
       .pipe(browserSync.stream())
   });
 
